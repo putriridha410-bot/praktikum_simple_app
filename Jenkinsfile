@@ -14,12 +14,14 @@ pipeline {
                 checkout scm
             }
         }
-
         stage('Build') {
-            steps {
-                bat 'echo Mulai build aplikasi Python Flask'
-                bat 'python --version'
-                bat 'docker --version'
+    steps {
+        bat 'echo Mulai build aplikasi Python Flask'
+        bat 'docker --version'
+    }
+}
+    }
+}
             }
         }
 
